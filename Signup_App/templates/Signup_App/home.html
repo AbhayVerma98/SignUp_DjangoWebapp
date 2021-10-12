@@ -1,0 +1,14 @@
+
+{% extends 'Signup_App/master.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+        {{user.username}}
+    {% else %}
+    User
+    {% endif %}
+
+
+<h1>home</h1>
+{% endblock %}
